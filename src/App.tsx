@@ -69,15 +69,15 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-sky-200 to-white">
-      <div className="max-w-4xl mx-auto p-6 pb-24">
+      <div className="max-w-4xl mx-auto p-4 sm:p-6 pb-24">
         
         <div className="flex items-center justify-center gap-2 mb-8">
           <Link2 className="w-8 h-8 text-sky-700" />
-          <h1 className="text-3xl font-bold text-sky-800 font-sans">Primewire Link Extractor</h1>
+          <h1 className="text-2xl sm:text-3xl font-bold text-sky-800 font-sans">Primewire Link Extractor</h1>
         </div>
 
         <form onSubmit={handleSubmit} className="mb-8">
-          <div className="flex gap-4">
+          <div className="flex flex-col sm:flex-row gap-4">
             <input
               type="url"
               value={url}
@@ -110,7 +110,7 @@ function App() {
         )}
 
         {allLinksText && (
-          <div className="rounded-lg shadow-lg p-6 bg-white border border-sky-300">
+          <div className="rounded-lg shadow-lg p-4 sm:p-6 bg-white border border-sky-300">
             <h2 className="text-xl font-semibold text-sky-800 mb-4 font-sans">
               Extracted Links
             </h2>
